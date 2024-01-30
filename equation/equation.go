@@ -1,10 +1,10 @@
 package equation
 
 type Logger interface {
-	Debug(description string)
-	Error(description string)
-	Info(description string)
-	Warn(description string)
+	Debug(description string, args ...any)
+	Error(description string, args ...any)
+	Info(description string, args ...any)
+	Warn(description string, args ...any)
 }
 
 func Description() string {

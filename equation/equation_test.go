@@ -6,10 +6,10 @@ import (
 
 type MockLogger struct{}
 
-func (m MockLogger) Debug(description string) {}
-func (m MockLogger) Error(description string) {}
-func (m MockLogger) Info(description string)  {}
-func (m MockLogger) Warn(description string)  {}
+func (m MockLogger) Debug(description string, args ...any) {}
+func (m MockLogger) Error(description string, args ...any) {}
+func (m MockLogger) Info(description string, args ...any)  {}
+func (m MockLogger) Warn(description string, args ...any)  {}
 
 func TestDescription(t *testing.T) {
 	got := Description()
