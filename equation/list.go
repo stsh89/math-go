@@ -5,7 +5,7 @@ type Lister interface {
 }
 
 func List(lister Lister, logger Logger) []string {
-	logger.Debug("Listing all equations...")
+	logger.Info("Listing all equations...")
 
 	return lister.List()
 }

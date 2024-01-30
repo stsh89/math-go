@@ -5,7 +5,7 @@ type Saver interface {
 }
 
 func Save(term string, saver Saver, logger Logger) string {
-	logger.Debug("Saving equation...")
+	logger.Info("Saving equation...")
 
 	return saver.Save(term)
 }

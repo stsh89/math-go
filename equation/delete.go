@@ -5,7 +5,7 @@ type Deleter interface {
 }
 
 func Delete(term string, deleter Deleter, logger Logger) string {
-	logger.Debug("Deleting equation...")
+	logger.Info("Deleting equation...")
 
 	return deleter.Delete(term)
 }

@@ -5,7 +5,7 @@ type Finder interface {
 }
 
 func Find(term string, finder Finder, logger Logger) string {
-	logger.Debug("Finding equation...")
+	logger.Info("Finding equation...")
 
 	return finder.Find(term)
 }
